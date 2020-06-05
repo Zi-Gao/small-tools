@@ -1,26 +1,26 @@
 import java.util.Scanner;
 
-public class CommonMultiplw {//»ñÈ¡×îĞ¡¹«±¶Êı
+public class CommonMultiplw {//è·å–æœ€å°å…¬å€æ•°
 	
-	static public void Core(long a,long b) {//Ö÷·½·¨
+	static public void Core(long a,long b) {//ä¸»æ–¹æ³•
 		long c;
-		if(a>b) {//Òò¹«±¶Êı²»»áĞ¡ÓÚ×îĞ¡µÄÊıËùÒÔ´Ó×îĞ¡µÄÊı¿ªÊ¼ÊÔ
+		if(a>b) {//å› å…¬å€æ•°ä¸ä¼šå°äºæœ€å°çš„æ•°æ‰€ä»¥ä»æœ€å°çš„æ•°å¼€å§‹è¯•
 			c = a;
 		}
 		c = b;
 		for(;true;c++) {
-			if(c % a == 0 && c % b ==0) {//Èç¹ûÂú×ãÌõ¼şÖ´ĞĞÓï¾ä
-				System.out.println(a+"ºÍ"+b+"µÄ×îĞ¡¹«±¶ÊıÊÇ£º"+c);//Êä³ö´ğ°¸
-				break;//Í£Ö¹Ñ­»·
+			if(c % a == 0 && c % b ==0) {//å¦‚æœæ»¡è¶³æ¡ä»¶æ‰§è¡Œè¯­å¥
+				System.out.println(a+"å’Œ"+b+"çš„æœ€å°å…¬å€æ•°æ˜¯ï¼š"+c);//è¾“å‡ºç­”æ¡ˆ
+				break;//åœæ­¢å¾ªç¯
 			}
 		}
 	}
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë²ÎÊı1:");
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªå› æ•°");
 		long a = sc.nextInt();
-		System.out.println("ÇëÊäÈë²ÎÊı2:");
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªå› æ•°");
 		long b = sc.nextInt();
 		CommonMultiplw.Core(a, b);
 	}

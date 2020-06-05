@@ -1,25 +1,25 @@
 import java.util.Scanner;
 
-public class PrimeNumber {//ÖÊÊıºÏÊı¼ì²âÆ÷
+public class PrimeNumber {//è´¨æ•°åˆæ•°æ£€æµ‹å™¨
 	public static void main(String[] args) {
 		long a,b,c;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÊäÈëĞèÒª¼ì²éµÄÊı");
-		a = sc.nextInt();
-		c = a/2;//Ä¿±êÊıµÄÒ»\°ë£¬Ó¦ÎªÒ»°ëÒÔºó»áÖØ¸´
-		if(a % 2 == 1) {//ÆæÊıjava»áÓà1°Ñ1¼ÓÉÏ
+		System.out.println("è¾“å…¥éœ€è¦æ£€æŸ¥çš„æ•°");
+		a = sc.nextLong();
+		c = a/2;//ç›®æ ‡æ•°çš„ä¸€\åŠï¼Œåº”ä¸ºä¸€åŠä»¥åä¼šé‡å¤
+		if(a % 2 == 1) {//å¥‡æ•°javaä¼šä½™1æŠŠ1åŠ ä¸Š
 			c = c + 1;
 		}
-		for (b = 2;b<=c;b++) {//°¤¸öÊÔ
+		for (b = 2;b<=c;b++) {//æŒ¨ä¸ªè¯•
 			if(a%b==0) {
-				System.out.println("ºÏÊı");//³öÏÖÒ»´Î´¦ÁË1ºÍÄ¿±êÊı±¾ÉúµÄÊı¾ÍÊä³öºÏÊı
+				System.out.println("åˆæ•°");//å‡ºç°ä¸€æ¬¡å¤„äº†1å’Œç›®æ ‡æ•°æœ¬ç”Ÿçš„æ•°å°±è¾“å‡ºåˆæ•°
 				break;
 			}
 		}
-		if(c==b-1 && a!=1) {//bÑ­»·µ½ÁË×îºó±íÊ¾ÊÇÖÊÊıµ«ÊÇbÔÚ×îºóÒ»´Î»¹»á+1°Ñ1¼õÈ¥
-			System.out.println("ÖÊÊı");
+		if(c==b-1 && a!=1) {//bå¾ªç¯åˆ°äº†æœ€åè¡¨ç¤ºæ˜¯è´¨æ•°ä½†æ˜¯båœ¨æœ€åä¸€æ¬¡è¿˜ä¼š+1æŠŠ1å‡å»
+			System.out.println("è´¨æ•°");
 		}else if(a==1){
-			System.out.println("1¼È²»ÊÇÖÊÊıÒ²²»ÊÇºÏÊı");
+			System.out.println("1æ—¢ä¸æ˜¯è´¨æ•°ä¹Ÿä¸æ˜¯åˆæ•°");
 		}
 	}
 }

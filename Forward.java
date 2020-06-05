@@ -1,15 +1,15 @@
 import java.util.Scanner;
 public class Forward {
 	static public void Core() {
-		long b = 8;
+		Scanner sc = new Scanner(System.in);
+		int b = 8;
 		System.out.println("    \r\n"+
 				"|---------|\r\n"+
 				"|         |\r\n"+
 				"|    +    |\r\n"+
 				"|         |\r\n"+
 				"|---------|\r\n");
-		Scanner sc = new Scanner(System.in);
-		for (String a;true;) {
+		for (String  a;true;){
 			a = sc.nextLine();
 			if("w".equals(a)) {
 				b = b - 3;
