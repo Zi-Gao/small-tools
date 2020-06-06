@@ -14,4 +14,6 @@
 
 ## 加速
 
-码云https://gitee.com/zi_gao/Small-Tools
+码云 https://gitee.com/zi_gao/Small-Tools
+
+GitHub https://github.com/Zi-Gao/Small-Tools
