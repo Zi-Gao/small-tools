@@ -20,6 +20,8 @@ public class Main {
                 }
             }else if(Lnput.CoreLnt(str) == 1){//若不是则输出
                 System.out.println("请输入int值");
+            }else if(Integer.valueOf(str).intValue() > 4){
+                System.out.println("请输入正确数字 [1-4]");
             }
         }
     }

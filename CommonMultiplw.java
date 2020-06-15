@@ -17,12 +17,18 @@ public class CommonMultiplw {//获取最小公倍数
 	}
 	
 	public static void main(String[] args) {
+		Long a,b;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("请输入第一个因数");
-		long a = sc.nextInt();
+		String str1 = sc.nextLine();
 		System.out.println("请输入第二个因数");
-		long b = sc.nextInt();
-		CommonMultiplw.Core(a, b);
+		String str2 = sc.nextLine();
+		if (Lnput.CoreLong(str1) == 0 && Lnput.CoreLong(str2) == 0){//检测是否超过Long值
+			a = Long.valueOf(str1).longValue();
+			b = Long.valueOf(str2).longValue();
+			CommonMultiplw.Core(a, b);
+		}else if(Lnput.CoreLong(str1) == 1 | Lnput.CoreLong(str2) == 1){//若不是则输出
+			System.out.println("请输入Long值");
+		}
 	}
-	
 }
