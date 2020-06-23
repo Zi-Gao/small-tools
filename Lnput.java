@@ -1,5 +1,5 @@
 public class Lnput{
-    public static int CoreLnt(String Input) {
+    public static int CoreInt(String Input) {
         int Int;
         try {
             Integer.valueOf(Input).intValue();
