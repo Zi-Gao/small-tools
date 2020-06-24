@@ -30,8 +30,8 @@ public class CommonMultiplw{
 		int i = 0;//记录输入次数
 		String[] arr = new String[320339960];
 		for (;true;){//重复输入
-				if (i == Integer.MAX_VALUE){//防溢出
-					System.out.println("此程序记录因数个数值为Int,2147483647,继续将会溢出,已自动停止");//输出
+				if (i == 320339960){//防溢出
+					System.out.println("此程序记录因数个最多为320339960,现在为320339960,继续将会溢出,已自动停止");//输出
 					break;//停止
 			}
 			System.out.println("请输入因数.输入0为开始计算");//打印标题引导用户输入
