@@ -7,9 +7,9 @@
 
 这是我的第一个项目
 
-## 代码
+## 使用
 
-本人英语不好,类名纯属翻译
+Wiki[https://github.com/Zi-Gao/Small-Tools/wiki/%E4%BD%BF%E7%94%A8]
 
 
 ## 加速
