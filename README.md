@@ -9,7 +9,7 @@
 
 ## 使用
 
-Wiki[https://github.com/Zi-Gao/Small-Tools/wiki/%E4%BD%BF%E7%94%A8]
+[Wiki](https://github.com/Zi-Gao/Small-Tools/wiki)
 
 
 ## 加速
