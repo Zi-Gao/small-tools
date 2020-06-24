@@ -2,6 +2,13 @@ import java.util.Scanner;
 public class CommonMultiplw{
 	static public void Core(final String[] arr) {//核心
 		long c = 1;
+		for(String arrLong : arr){//优化,从最大的数开始试,因为最小公倍数不可能小于最大的数
+			if(arrLong == null){//已经结束
+				break;//停止
+			}else if(Long.valueOf(arrLong).intValue() > c){//若有更大的就赋值
+				c = Long.valueOf(arrLong).intValue();//赋值
+			}
+		}
 		Loop:for(;true;c++) {//暴力破解
 			if (c == Long.MAX_VALUE){//防溢出
 				System.out.println("此程序记录最小公倍数值为Long,现在为9223372036854775807,继续将会溢出,已自动停止");//打印
