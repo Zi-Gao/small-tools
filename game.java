@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Forward {
+public class game {
 	static public void Core() {
 		int b = 8;
 		System.out.println("    \r\n" + "|---------|\r\n" + "|         |\r\n" + "|    +    |\r\n" + "|         |\r\n"

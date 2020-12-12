@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CommonMultiplw {
+public class leastCommonMultiple {
 	static public void Core(final String[] arr) {// 核心
 		long c = 1;
 		for (String arrLong : arr) {// 优化,从最大的数开始试,因为最小公倍数不可能小于最大的数
@@ -10,7 +10,7 @@ public class CommonMultiplw {
 				c = Long.valueOf(arrLong).intValue();// 赋值
 			}
 		}
-		Loop: for (; true; c++) {// 暴力破解
+		Loop: for (; true; c++) {// 暴力搜寻
 			if (c == Long.MAX_VALUE) {// 防溢出
 				System.out.println("此程序记录最小公倍数值为Long,现在为9223372036854775807,继续将会溢出,已自动停止");// 打印
 				break;// 停止
@@ -38,12 +38,12 @@ public class CommonMultiplw {
 			}
 			System.out.println("请输入因数.输入0为开始计算");// 打印标题引导用户输入
 			String str = sc.nextLine();// 输入方法
-			if (Lnput.CoreLong(str) == 1 | str == null) {// 防溢出,防止直接输入null
+			if (InputDetection.longType(str) == 1 | str == null) {// 防溢出,防止直接输入null
 				System.out.println("请输入数字,并为Long类型,请重新输入");// 打印并跳过本次循环
 				continue;
 			}
 			if (Long.valueOf(str).longValue() == 0) {// 调用核心运算
-				CommonMultiplw.Core(arr);// 调用核心
+				leastCommonMultiple.Core(arr);// 调用核心
 				sc.close();
 				break;
 			}

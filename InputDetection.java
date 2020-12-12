@@ -1,5 +1,5 @@
-public class Lnput{
-    public static int CoreInt(String Input) {
+public class InputDetection{
+    public static int intType(String Input) {
         int Int;
         try {
             Integer.valueOf(Input).intValue();
@@ -9,7 +9,7 @@ public class Lnput{
         }
     return Int;
     }
-    public static int CoreLong(String Input) {
+    public static int longType(String Input) {
         int Int;
         try {
             Long.valueOf(Input).intValue();
