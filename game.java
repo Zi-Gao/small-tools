@@ -20,50 +20,35 @@ public class game {
 			if (b == 4) {
 				System.out.println("    \r\n" + "|---------|\r\n" + "| +       |\r\n" + "|         |\r\n"
 						+ "|         |\r\n" + "|---------|\r\n");
-				sc.close();
 			} else if (b == 5) {
 				System.out.println("    \r\n" + "|---------|\r\n" + "|    +    |\r\n" + "|         |\r\n"
 						+ "|         |\r\n" + "|---------|\r\n");
-				sc.close();
 			} else if (b == 6) {
 				System.out.println("    \r\n" + "|---------|\r\n" + "|       + |\r\n" + "|         |\r\n"
 						+ "|         |\r\n" + "|---------|\r\n");
-				sc.close();
 			} else if (b == 7) {
 				System.out.println("    \r\n" + "|---------|\r\n" + "|         |\r\n" + "| +       |\r\n"
 						+ "|         |\r\n" + "|---------|\r\n");
-				sc.close();
 			} else if (b == 8) {
 				System.out.println("    \r\n" + "|---------|\r\n" + "|         |\r\n" + "|    +    |\r\n"
 						+ "|         |\r\n" + "|---------|\r\n");
-				sc.close();
 			} else if (b == 9) {
 				System.out.println("    \r\n" + "|---------|\r\n" + "|         |\r\n" + "|       + |\r\n"
 						+ "|         |\r\n" + "|---------|\r\n");
-				sc.close();
 			} else if (b == 10) {
 				System.out.println("    \r\n" + "|---------|\r\n" + "|         |\r\n" + "|         |\r\n"
 						+ "| +       |\r\n" + "|---------|\r\n");
-				sc.close();
 			} else if (b == 11) {
 				System.out.println("    \r\n" + "|---------|\r\n" + "|         |\r\n" + "|         |\r\n"
 						+ "|    +    |\r\n" + "|---------|\r\n");
-
-				sc.close();
 			} else if (b == 12) {
 				System.out.println("    \r\n" + "|---------|\r\n" + "|         |\r\n" + "|         |\r\n"
 						+ "|       + |\r\n" + "|---------|\r\n");
-				sc.close();
 			} else if (b < 4 | b > 12) {
 				System.out.println("    \r\n" + "|---------|\r\n" + "|         |\r\n" + "|    +    |\r\n"
 						+ "|         |\r\n" + "|---------|\r\n");
-				sc.close();
 				b = 8;
 			}
 		}
-	}
-
-	public static void main(String[] args) {
-		Core();
 	}
 }
