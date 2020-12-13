@@ -11,9 +11,8 @@ public class primeNumberCombinationDetector {// 质数合数检测器
 			a = Long.valueOf(str).longValue();
 			Core(a);
 		} else if (InputDetection.longType(str) == 1) {// 若不是则输出
-			System.out.println("请输入Long值");
+			System.out.println("请输入正确数字");
 		}
-		sc.close();
 	}
 
 	public static void Core(Long InputDetection) {
@@ -28,9 +27,9 @@ public class primeNumberCombinationDetector {// 质数合数检测器
 				break;
 			}
 		}
-		if (c == b - 1 && InputDetection != 1) {// b循环到了最后表示是质数但是b在最后一次还会+1把1减去
+		if (c == b - 1 && InputDetection >= 1) {// b循环到了最后表示是质数但是b在最后一次还会+1把1减去
 			System.out.println("质数");
-		} else if (InputDetection == 1) {
+		} else if (InputDetection <= 1) {
 			System.out.println("1既不是质数也不是合数");
 		}
 	}
