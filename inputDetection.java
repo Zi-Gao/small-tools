@@ -1,22 +1,22 @@
-public class InputDetection{
+public class inputDetection{
     public static int intType(String Input) {
-        int Int;
+        int returnInt;
         try {
             Integer.valueOf(Input).intValue();
-            Int = 0;
+            returnInt = 0;
         } catch (Exception e) {
-            Int = 1;
+            returnInt = 1;
         }
-    return Int;
+    return returnInt;
     }
     public static int longType(String Input) {
-        int Int;
+        int returnInt;
         try {
             Long.valueOf(Input).intValue();
-            Int = 0;
+            returnInt = 0;
         } catch (Exception e) {
-            Int = 1;
+            returnInt = 1;
         }
-    return Int;
+    return returnInt;
     }
 }
