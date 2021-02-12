@@ -5,10 +5,9 @@
  * @LastEditors: Zi_Gao
  * @Description: 检测输入是否为正确类型
  * @FilePath: /Small-Tools/inputDetection.java
- * @
  */
 
-public class inputDetection{
+public class inputDetection {
     /**
      * @description: int类型输入检测
      * @param {String} 输入被检测的字符串
@@ -22,9 +21,10 @@ public class inputDetection{
         } catch (Exception e) {
             returnInt = 1;
         }
-    return returnInt;
+        return returnInt;
     }
-        /**
+
+    /**
      * @description: long类型输入检测
      * @param {String} 输入被检测的字符串
      * @return {int} 0表示输入值是long值 1表示输入值不是long值
@@ -37,6 +37,6 @@ public class inputDetection{
         } catch (Exception e) {
             returnInt = 1;
         }
-    return returnInt;
+        return returnInt;
     }
 }

@@ -1,23 +1,23 @@
 /*
  * @Author: Zi_Gao
  * @Date: 2020-12-11 21:49:20
- * @LastEditTime: 2021-02-12 21:14:33
+ * @LastEditTime: 2021-02-12 21:22:51
  * @LastEditors: Zi_Gao
  * @Description: 主类,入口
  * @FilePath: /Small-Tools/Main.java
- * @
  */
 
 import java.util.Scanner;
-	/**
-  * @description: 用户交互
-  * @param {String[]} null
-  * @return {*} null
-  */
+
+/**
+ * @description: 用户交互
+ * @param {String[]} null
+ * @return {*} null
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        while(true) {
+        while (true) {
             System.out.println("请输入你要在使用的工具编号\r\n1.最小公倍数计算\r\n2.公因数(公约数)计算\r\n3.多进制转换\r\n4.质数合数检测器");
             System.out.print("[1/2/3/4]:");
             String strToolID = sc.nextLine();
@@ -29,7 +29,7 @@ public class Main {
                 int intToolID = Integer.valueOf(strToolID).intValue();
                 if (intToolID == 1) {
                     leastCommonMultiple.main(args);
-                } else if (intToolID == 2){
+                } else if (intToolID == 2) {
                     conventionNumber.main(args);
                 } else if (intToolID == 3) {
                     binaryConversion.main(args);

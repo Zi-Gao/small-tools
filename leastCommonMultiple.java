@@ -1,31 +1,30 @@
 /*
  * @Author: Zi_Gao
  * @Date: 2020-12-11 21:49:20
- * @LastEditTime: 2021-02-12 20:58:55
+ * @LastEditTime: 2021-02-12 21:22:21
  * @LastEditors: Zi_Gao
  * @Description: 求最小公倍数
  * @FilePath: /Small-Tools/leastCommonMultiple.java
- * @
  */
 
 import java.util.Scanner;
 
 public class leastCommonMultiple {
 	/**
-  * @description: 核心方法 穷举公倍数
-  * @param {long[]} 一维数组 每个数都为因数 需为正整数
-  * @return {long} 最小公倍数 若输出异常则为数据太大,超出long最大限度
-  */
+	 * @description: 核心方法 穷举公倍数
+	 * @param {long[]} 一维数组 每个数都为因数 需为正整数
+	 * @return {long} 最小公倍数 若输出异常则为数据太大,超出long最大限度
+	 */
 	public static long Core(long[] numberArr) {
 		long returnValue = 0;
-		for (long tmpNumber : numberArr) {//找出数组中最大的数
+		for (long tmpNumber : numberArr) {// 找出数组中最大的数
 			if (tmpNumber == 0) {
 				break;
 			} else if (Long.valueOf(tmpNumber).intValue() > returnValue) {
 				returnValue = Long.valueOf(tmpNumber).intValue();
 			}
 		}
-		loop: for (;true; returnValue++) {
+		loop: for (; true; returnValue++) {
 			if (returnValue == Long.MAX_VALUE) {
 				break;
 			}
@@ -39,11 +38,12 @@ public class leastCommonMultiple {
 		}
 		return returnValue;
 	}
+
 	/**
-  * @description: 用户交互
-  * @param {String[]} null
-  * @return {*} null
-  */
+	 * @description: 用户交互
+	 * @param {String[]} null
+	 * @return {*} null
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int i = 0;
