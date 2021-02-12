@@ -1,7 +1,7 @@
 /*
  * @Author: Zi_Gao
  * @Date: 2020-12-11 21:49:20
- * @LastEditTime: 2021-02-11 23:41:14
+ * @LastEditTime: 2021-02-12 21:14:33
  * @LastEditors: Zi_Gao
  * @Description: 主类,入口
  * @FilePath: /Small-Tools/Main.java
@@ -18,8 +18,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while(true) {
-            System.out.println("请输入你要在使用的工具编号\r\n1.最小公倍数计算\r\n2.多进制转换\r\n3.质数合数检测器");
-            System.out.print("[1/2/3]:");
+            System.out.println("请输入你要在使用的工具编号\r\n1.最小公倍数计算\r\n2.公因数(公约数)计算\r\n3.多进制转换\r\n4.质数合数检测器");
+            System.out.print("[1/2/3/4]:");
             String strToolID = sc.nextLine();
             if ("n".equals(strToolID) | "N".equals(strToolID)) {
                 sc.close();
@@ -29,9 +29,11 @@ public class Main {
                 int intToolID = Integer.valueOf(strToolID).intValue();
                 if (intToolID == 1) {
                     leastCommonMultiple.main(args);
-                } else if (intToolID == 2) {
-                    binaryConversion.main(args);
+                } else if (intToolID == 2){
+                    conventionNumber.main(args);
                 } else if (intToolID == 3) {
+                    binaryConversion.main(args);
+                } else if (intToolID == 4) {
                     primeNumberDetection.main(args);
                 }
             } else if (inputDetection.intType(strToolID) == 1) {
